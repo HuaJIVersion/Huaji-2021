@@ -1,2 +1,0 @@
-cyicz123_test_main
-test_dev
