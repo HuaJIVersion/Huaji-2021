@@ -15,40 +15,43 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CountTime.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseObject.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="General\opencv_extended.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="General\numeric_rm.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Param.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="CountTime.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="BaseObject.cpp">
+    <ClCompile Include="BaseObject\BaseObject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="General\opencv_extended.cpp">
+    <ClCompile Include="General\CountTime.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="General\numeric_rm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Param.cpp">
+    <ClCompile Include="General\opencv_extended.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="General\Param.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="General\CountTime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="General\General.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="General\numeric_rm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="General\opencv_extended.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="General\Param.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject\BaseObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

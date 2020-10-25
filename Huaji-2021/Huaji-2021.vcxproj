@@ -66,9 +66,11 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\Key\Key\debug.props" />
+    <Import Project="..\..\..\Key\Key\debug.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\Key\Key\release.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -140,19 +142,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BaseObject.h" />
-    <ClInclude Include="CountTime.h" />
-    <ClInclude Include="General\numeric_rm.h" />
-    <ClInclude Include="General\opencv_extended.h" />
-    <ClInclude Include="Param.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BaseObject.cpp" />
-    <ClCompile Include="CountTime.cpp" />
+    <ClCompile Include="BaseObject\BaseObject.cpp" />
+    <ClCompile Include="General\CountTime.cpp" />
     <ClCompile Include="General\numeric_rm.cpp" />
     <ClCompile Include="General\opencv_extended.cpp" />
+    <ClCompile Include="General\Param.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Param.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseObject\BaseObject.h" />
+    <ClInclude Include="General\CountTime.h" />
+    <ClInclude Include="General\General.h" />
+    <ClInclude Include="General\numeric_rm.h" />
+    <ClInclude Include="General\opencv_extended.h" />
+    <ClInclude Include="General\Param.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

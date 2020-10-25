@@ -1,7 +1,7 @@
 #include<iostream>
 #include<opencv2/opencv.hpp>
-#include"CountTime.h"
-#include"BaseObject.h"
+#include"General/CountTime.h"
+#include"BaseObject/BaseObject.h"
 
 using namespace std;
 using namespace cv;

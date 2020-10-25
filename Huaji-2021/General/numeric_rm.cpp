@@ -1,4 +1,4 @@
-#include"../General/numeric_rm.h"
+#include"numeric_rm.h"
 
 
 namespace rmnum
