@@ -27,6 +27,7 @@ int main()
 
 
 
+
     //waitKey(0);//没有的话，窗口一闪而过。
     rm::Param p("config.yml");
     cout << p.debug_drawRoiRect << endl;
@@ -34,6 +35,7 @@ int main()
     cout << p.debug_showRoiImg << endl;
     cout << p.roi_scale_size[0] << endl;
     cout << p.roi_scale_size[1] << endl;
+
     return 0;
 
 }

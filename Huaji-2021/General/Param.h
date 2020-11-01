@@ -1,6 +1,9 @@
 #pragma once
 #include<opencv2/opencv.hpp>
+<<<<<<< HEAD
 #include<iostream>
+=======
+>>>>>>> 7f0da2a3f5994a9c076fb13588361ce7dfb494de
 
 namespace rm 
 {
@@ -11,7 +14,10 @@ namespace rm
 	{
 	public:
 		Param();
+<<<<<<< HEAD
 		Param(const std::string& filename);
+=======
+>>>>>>> 7f0da2a3f5994a9c076fb13588361ce7dfb494de
 
 		//debug²ÎÊý
 		bool debug_drawRoiRect;

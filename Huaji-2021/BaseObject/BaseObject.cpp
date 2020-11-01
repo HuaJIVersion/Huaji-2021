@@ -23,17 +23,17 @@ namespace rm
 		_t.resetTime();
 		_src = img;
 		
-		if (targetRect.size().area() != 0)//Ô¼ÊøÌõ¼þ£¬·ÀÖ¹³ö´í
+		if (targetRect.size().area() != 0)//Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½
 		{
 			findEnemy = exitEnemy::trueEnemy;
 			cv::Rect srcRect = cv::Rect(cv::Point(0, 0), _src.size());
-			_roiRect = srcRect & cvex::scaleRect(targetRect, _param.roi_scale_size);//Ê¶±ðµÄ¾ØÐÎ³¤Ëõ·Å_param.roi_scale_size ×÷Îªroi¾ØÐÎ.
+			_roiRect = srcRect & cvex::scaleRect(targetRect, _param.roi_scale_size);//Ê¶ï¿½ï¿½Ä¾ï¿½ï¿½Î³ï¿½ï¿½ï¿½ï¿½ï¿½_param.roi_scale_size ï¿½ï¿½Îªroiï¿½ï¿½ï¿½ï¿½.
 			_roiSrc = _src(_roiRect).clone();
 		}
 		else
 		{
 			findEnemy = exitEnemy::noneEnemy;
-			_roiRect = cv::Rect(cv::Point(0, 0), _src.size());//ËµÃ÷Ê¶±ðµÄ¾ØÐÎ¹ýÐ¡,ÊÓÎªÊ¶±ð´íÎ»,½«roiÖÃÎªÕûÕÅÍ¼Æ¬,È«Í¼ËÑË÷.
+			_roiRect = cv::Rect(cv::Point(0, 0), _src.size());//Ëµï¿½ï¿½Ê¶ï¿½ï¿½Ä¾ï¿½ï¿½Î¹ï¿½Ð¡,ï¿½ï¿½ÎªÊ¶ï¿½ï¿½ï¿½Î»,ï¿½ï¿½roiï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Í¼Æ¬,È«Í¼ï¿½ï¿½ï¿½ï¿½.
 			_roiSrc = _src.clone();
 		}
 	}

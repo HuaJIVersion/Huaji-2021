@@ -1,4 +1,21 @@
+<<<<<<< HEAD
 ﻿#pragma once
+=======
+﻿/* *********************************************************
+Description:
+	frame_counteric operations and comparisons
+	数值操作和比较
+Authors:
+	Binyan Hu, <binyan_hu@qq.com>
+	Renjie Cui, <773987208@qq.com>
+Create Date:
+	2017 - 10 - 31
+History:
+	2018 - 01 - 26 添加polyval polyfit函数
+
+************************************************************ */
+#pragma once
+>>>>>>> 7f0da2a3f5994a9c076fb13588361ce7dfb494de
 
 #include<opencv2/opencv.hpp>
 #include<numeric>

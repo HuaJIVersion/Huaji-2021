@@ -7,13 +7,13 @@ namespace rm
 	{
 	public:
 		CountTime() { _start = std::chrono::high_resolution_clock::now(); }
-		//重置计时器
+		//锟斤拷锟矫硷拷时锟斤拷
 		void resetTime();
-		//获取秒数
+		//锟斤拷取锟斤拷锟斤拷
 		double elapsedTimeSecond();
-		//获取毫秒数
+		//锟斤拷取锟斤拷锟斤拷锟斤拷
 		double elapsedTimeMilliSec();
-		//获取纳秒数
+		//锟斤拷取锟斤拷锟斤拷锟斤拷
 		unsigned long int elapsedTimeMicroSec();
 	private:
 		std::chrono::time_point< std::chrono::high_resolution_clock>_start;
