@@ -1,0 +1,8 @@
+Armor:
+  debug_drawRoiRect: False
+  debug_showRoiImg: False
+  debug_showImg: False
+
+  roi_scale_size:
+    - 3	#长扩大倍数
+    - 2	#宽扩大倍数
