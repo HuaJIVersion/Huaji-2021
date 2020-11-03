@@ -34,13 +34,19 @@ namespace rm
 
 
 	class ArmorParam :public Param
-	{
+	{private:
+		cv::Mat _src;
+		cv::Mat binImg;
+		enum ColorChannels
+		{
+			BLUE = 0,
+			GREEN = 1,
+			RED = 2
+		};
+
 	public:
-		ArmorParam();
-
-
-
-
+		ArmorParam(cv::Mat img, enum ColorChannels Enemycolor, const string& method);
+		cv::Mat Binarization();
 	};
 
 
