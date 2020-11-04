@@ -27,6 +27,14 @@ namespace rm
 		BaseObject();
 
 		/*
+		获取_src的值
+		*/
+		cv::Mat getSrc();
+		/*
+		获取_param的值
+		*/
+		Param getParam();
+		/*
 		更新roi为全图|重置时间|设置findEnemy为noneEnemy
 		*/
 		void update(cv::Mat& img);
@@ -50,7 +58,6 @@ namespace rm
 		展示原图
 		*/
 		void showImg();
-
 		/*
 		彩色原图像灰度化
 		*/

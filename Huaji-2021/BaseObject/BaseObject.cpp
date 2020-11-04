@@ -9,6 +9,14 @@ namespace rm
 		findEnemy = exitEnemy::noneEnemy;
 	}
 
+	cv::Mat BaseObject::getSrc() {
+		return _src;
+	}
+
+	Param BaseObject::getParam() {
+		return _param;
+	}
+
 	void BaseObject::update(cv::Mat& img)
 	{
 		_t.resetTime();

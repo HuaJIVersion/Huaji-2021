@@ -65,12 +65,11 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\Key\Key\debug.props" />
-    <Import Project="..\..\..\Key\Key\debug.props" />
+    <Import Project="..\CVd.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\Key\Key\release.props" />
+    <Import Project="..\CV.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -142,6 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Armor\Armor.cpp" />
     <ClCompile Include="BaseObject\BaseObject.cpp" />
     <ClCompile Include="General\CountTime.cpp" />
     <ClCompile Include="General\numeric_rm.cpp" />
@@ -150,6 +150,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Armor\Armor.h" />
     <ClInclude Include="BaseObject\BaseObject.h" />
     <ClInclude Include="General\CountTime.h" />
     <ClInclude Include="General\General.h" />

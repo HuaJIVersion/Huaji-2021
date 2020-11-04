@@ -12,9 +12,10 @@ namespace rm
 		Param();
 
 		//debug²ÎÊý
-		bool debug_drawRoiRect;
-		bool debug_showRoiImg;
-		bool debug_showImg;
+		bool debug_drawRoiRect= true;
+		bool debug_showRoiImg= true;
+		bool debug_showImg= true;
+		bool debug_showBinImg = true;
 
 
 
