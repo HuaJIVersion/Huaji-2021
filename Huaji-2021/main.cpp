@@ -11,7 +11,7 @@ using namespace rm;
 
 int main()
 {
-	Mat src = imread("C:/Girlfriend.jpg"); //图片路径记得修改
+	Mat src = imread("C:/Users/vekia/Desktop/test.jpg"); //图片路径记得修改
 	if (src.empty()) {
 	    cout << "image load fail" << endl;
 	   return 0;
@@ -19,17 +19,11 @@ int main()
 	//cout << src.cols << ' ' << src.rows<<endl;
 	cv::rectangle(src, cv::Rect(cv::Point(src.rows / 2, src.cols / 2), cv::Size(50, 50)), cv::Scalar(0, 255, 0));
 	Armor b;
-	//b.update(src, cv::Rect(cv::Point(src.rows/2,src.cols/2), cv::Size(50, 50)));
 	b.update(src);
-	//b.drawRoiRect();
-	b.showImg();
-	b.binarize(BLUE,0);
+	b.binarize(BLUE, 0);
 	b.show_binImg();
-	//b.showRoiImg();
-	//
-
-
-
+	b.LightDetect();
+	b.show_lightDetectImg();
 	waitKey(0);//没有的话，窗口一闪而过。
 	return 0;
 
