@@ -35,6 +35,10 @@ namespace rm
 		*/
 		Param getParam();
 		/*
+		获取_roiSrc的值
+		*/
+		cv::Mat getRoi();
+		/*
 		更新roi为全图|重置时间|设置findEnemy为noneEnemy
 		*/
 		void update(cv::Mat& img);

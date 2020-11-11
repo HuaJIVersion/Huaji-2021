@@ -13,6 +13,10 @@ namespace rm
 		return _src;
 	}
 
+	cv::Mat BaseObject::getRoi() {
+		return _roiSrc;
+	}
+
 	Param BaseObject::getParam() {
 		return _param;
 	}
@@ -76,4 +80,5 @@ namespace rm
 	{
 		cv::cvtColor(_src, _grayImg, cv::COLOR_RGB2GRAY);
 	}
+
 }
